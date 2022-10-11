@@ -21,32 +21,32 @@ const Header = () => {
           <ul className='flex items-center hidden space-x-8 lg:flex'>
             <li>
               <NavLink
-                to='/home'
-                aria-label='Home'
-                title='Home'
+                to='/'
+                aria-label='topics'
+                title='topics'
                 className={({isActive}) => isActive ? 'font-medium tracking-wide text-lime-500 transition-colors duration-200 hover:text-deep-purple-accent-400' : 'font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'}
               >
-                Home
+                Topics
               </NavLink>
             </li>
             <li>
               <NavLink
-                to='/books'
-                aria-label='Books'
-                title='Books'
+                to='/statistics'
+                aria-label='statistics'
+                title='statistics'
                 className={({isActive}) => isActive ? 'font-medium tracking-wide text-lime-500 transition-colors duration-200 hover:text-deep-purple-accent-400' : 'font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'}
               >
-                Books
+                Statistics
               </NavLink>
             </li>
             <li>
               <NavLink
-                to='/about'
-                aria-label='About us'
-                title='About us'
+                to='/blog'
+                aria-label='Blog'
+                title='Blog'
                 className={({isActive}) => isActive ? 'font-medium tracking-wide text-lime-500 transition-colors duration-200 hover:text-deep-purple-accent-400' : 'font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'}
               >
-                About us
+                Blog
               </NavLink>
             </li>
           </ul>
@@ -110,31 +110,31 @@ const Header = () => {
                       <li>
                         <NavLink
                           to='/'
-                          aria-label='Home'
-                          title='Home'
+                          aria-label='topics'
+                          title='topics'
                           className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
                         >
-                          Home
+                          Topics
                         </NavLink>
                       </li>
                       <li>
                         <NavLink
-                          to='/books'
-                          aria-label='Books'
-                          title='Books'
+                          to='/statistics'
+                          aria-label='Statistics'
+                          title='Statistics'
                           className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
                         >
-                          Books
+                          Statistics
                         </NavLink>
                       </li>
                       <li>
                         <NavLink
-                          to='/about'
-                          aria-label='About Us'
-                          title='About Us'
+                          to='/blog'
+                          aria-label='blog'
+                          title='blog'
                           className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
                         >
-                          About Us
+                          Blog
                         </NavLink>
                       </li>
                     </ul>
