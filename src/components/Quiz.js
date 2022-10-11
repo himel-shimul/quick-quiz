@@ -1,16 +1,17 @@
 import React, { useState } from 'react';
+import { toast } from 'react-toastify';
 
 const Quiz = ({quiz}) => {
     const {question, correctAnswer, options} = quiz;
     const [correct, setCorrect] = useState();
     // console.log(quiz);
-    const clickop = (singleOption) =>{
+    const handleClick = (singleOption) =>{
         console.log(singleOption);
         if(singleOption === correctAnswer){
-            alert('right')
+            toast.info('Correct!', { autoClose: 1000 })
         }
         else{
-            alert('wrong')
+            toast.warning('Wrong! Try Again', { autoClose: 1000 })
         }
         setCorrect(singleOption)
     }
@@ -18,18 +19,11 @@ const Quiz = ({quiz}) => {
         <div>
             <h1>question: {question}</h1>
             <br />
-            
-            {
-                <p>{correct}</p>
-            }
-            {
-              correctAnswer.length === 3 ? <p>3 jon k diba </p> : <p> ok buy</p>
-            }
             <br />
             <h1>answer: {correctAnswer}</h1>
             <div class="grid grid-cols-2 gap-4 w-50 border">
                 {
-                    options.map(singleOption => <div onClick={() =>clickop(singleOption)}>{singleOption}</div>)
+                    options.map(singleOption => <div onClick={() =>handleClick(singleOption)}> <input type="radio" value={(singleOption)} name="quiz" /> {singleOption}</div>)
                 }
                 </div>
         </div>
