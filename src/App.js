@@ -5,7 +5,7 @@ import router from './utilities/routes';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App bg-lime-100">
       <RouterProvider router={router}></RouterProvider>
     </div>
   );

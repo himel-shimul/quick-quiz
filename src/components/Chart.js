@@ -32,15 +32,16 @@ const Chart = ({topicsData}) => {
       ];
       
     return (
-        <div>
-            
-           <LineChart width={500} height={400} data={data}>
-           <Line type="monotone" dataKey="Total" stroke="#CDDC39" activeDot={{ r: 8 }} />
-           <XAxis dataKey="name" />
-          <YAxis />
-          <Tooltip></Tooltip>
-           </LineChart> 
-        </div>
+        
+            <div className='h-screen'>
+                
+            <LineChart className='m-auto' width={500} height={400} data={data}>
+            <Line type="monotone" dataKey="Total" stroke="#CDDC39" activeDot={{ r: 8 }} />
+            <XAxis dataKey="name" />
+            <YAxis />
+            <Tooltip></Tooltip>
+            </LineChart> 
+            </div>
     );
 };
 
