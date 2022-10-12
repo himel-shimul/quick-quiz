@@ -7,7 +7,7 @@ const Statistics = () => {
     // console.log(topicsData);
     return (
         <div>
-            <p>statistics</p>
+            <p className='text-2xl font-bold '>All Quiz Data</p>
             <Chart topicsData={topicsData}></Chart>
         </div>
     );
